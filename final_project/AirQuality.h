@@ -9,6 +9,9 @@
 #define FINAL_PROJECT_AIRQUALITY_H
 
 class AirQuality {
+    friend ostream& operator << (ostream&, const AirQuality&);
+    friend istream& operator >> (istream&, AirQuality&);
+
 public:
     AirQuality();
 

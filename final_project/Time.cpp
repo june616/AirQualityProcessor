@@ -74,16 +74,23 @@ void Time::print() const
 // ostream operator
 ostream& operator << (ostream& osObject, const Time& time1) //creating an instance of a date class, i.e. date1
 {
-    osObject << time1.sec
-             << "/" << time1.min
-             << "/" << time1.hour;
+    if (time1.min == 0 && time1.sec == 0){
+        osObject << time1.hour
+                 << ":" << "00"
+                 << ":" << "00";
+    }
+    else {
+        osObject << time1.hour
+                 << ":" << time1.min
+                 << ":" << time1.sec;
+    }
     return osObject;
 }
 
 // istream operator
 istream& operator >> (istream& isObject, Time& time1)
 {
-    isObject >> time1.sec >> time1.min >> time1.hour;
+    isObject >> time1.hour >> time1.min >> time1.sec;
     return isObject;
 }
 

@@ -67,3 +67,16 @@ double AirQuality::getRelativeHumidity() {
 double AirQuality::getTemp() {
     return temp;
 }
+
+ostream& operator << (ostream& osObject, const AirQuality& Air1)
+{
+    osObject << Air1.date << " " << Air1.time << " " << Air1.temp << " " << Air1.relativeHumidity << " " << Air1.absHumidity;
+    return osObject;
+}
+
+
+istream& operator >> (istream& isObject, AirQuality& Air1)
+{
+    isObject >> Air1.date >> Air1.time >> Air1.temp >> Air1.relativeHumidity >> Air1.absHumidity;
+    return isObject;
+}
