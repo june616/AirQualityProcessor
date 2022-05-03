@@ -1,10 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/final_project.dir/main.cpp.obj"
-  "CMakeFiles/final_project.dir/main.cpp.obj.d"
-  "final_project.exe"
-  "final_project.exe.manifest"
+  "CMakeFiles/final_project.dir/main.cpp.o"
+  "CMakeFiles/final_project.dir/main.cpp.o.d"
+  "final_project"
   "final_project.pdb"
-  "libfinal_project.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.
