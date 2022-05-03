@@ -1,13 +1,14 @@
 //
 // Created by hycwy on 4/10/2022.
 //
+#ifndef FINAL_PROJECT_AIR_QUALITY_H
+#define FINAL_PROJECT_AIR_QUALITY_H
+
 #include "Date.h"
 #include "Date.cpp"
 #include "Time.h"
 #include "Time.cpp"
 
-#ifndef FINAL_PROJECT_AIRQUALITY_H
-#define FINAL_PROJECT_AIRQUALITY_H
 
 class AirQuality {
 public:
@@ -38,6 +39,4 @@ private:
     double relativeHumidity;
     double absHumidity;
 };
-
-
-#endif //FINAL_PROJECT_AIRQUALITY_H
+#endif
