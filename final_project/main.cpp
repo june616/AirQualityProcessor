@@ -71,72 +71,12 @@ int main()
     return 0;
 }
 
-
-
-
-//
-//int main()
-//{
-//    ifstream myFile("AirQualityUCI.csv");
-//
-//    if (!myFile.is_open())
-//    {
-//        cout << "File not found." << endl;
-//        return 1;
-//    }
-//
-//    vector<string> fields;
-//    vector<AirQuality> airQualityCollection;
-//    getData(myFile, fields, airQualityCollection);
-//
-//    // just testing
-////    for (int i = 0; i < airQualityCollection.size(); i++){
-////        cout << airQualityCollection.at(i) << endl;
-////    }
-//
-//    // option 1-3
-//    // ps: if cannot find data corresponding to monthInput, return 0, instead of nan
-//    cout << "avg temp is: " << calculateAvgTemp(4, 3, airQualityCollection) << endl;
-//    cout << "avg relHumidity is: " << calculateRelHumidity(4, 3, airQualityCollection) << endl;
-//    cout << "abs relHumidity is: " << calculateAbsHumidity(4, 3, airQualityCollection) << endl;
-//
-//    // option 4
-////    Date d1(10, 3, 4);
-////    Time t1(0, 0, 18);
-////    double currentTemp, currentRelHumidity;
-////    displayTempAndRelHumidity(d1, t1, currentTemp, currentRelHumidity, airQualityCollection);
-////    cout << "At that date and time, temp is: " << currentTemp << ", rel humid is: " << currentRelHumidity << endl;
-//
-//    // if cannot find it, both return 0
-////    Date d2(10, 20, 4);
-////    Time t2(0, 0, 18);
-////    double currentTemp1, currentRelHumidity1;
-////    displayTempAndRelHumidity(d2, t2, currentTemp1, currentRelHumidity1, airQualityCollection);
-////    cout << "At that date and time, temp is: " << currentTemp1 << ", rel humid is: " << currentRelHumidity1 << endl;
-//
-//    // option 5-7
-//    // if cannot find data corresponding to monthInput, return -100
-//    cout << "max temp is: " << displayMaxTemp(4, 3, airQualityCollection) << endl;
-//    cout << "max rel is: " << displayMaxRelHumidity(4, 3, airQualityCollection) << endl;
-//    cout << "max abs is: " << displayMaxAbsHumidity(4, 3, airQualityCollection) << endl;
-//
-//    // option 8-10
-//    vector<AirQuality> tempHigherThanAvg;
-//    findTempHigherThanAvg(4, 3, airQualityCollection, tempHigherThanAvg);
-//    cout << "Higher than avg temp num: " << tempHigherThanAvg.size() << endl;
-//
-//    vector<AirQuality>relHumidHigherThanAvg;
-//    findRelHumidHigherThanAvg(4, 3, airQualityCollection, relHumidHigherThanAvg);
-//    cout << "Higher than avg rel num: " << relHumidHigherThanAvg.size() << endl;
-//
-//    vector<AirQuality>absHumidHigherThanAvg;
-//    findAbsHumidHigherThanAvg(4, 3, airQualityCollection, absHumidHigherThanAvg);
-//    cout << "Higher than avg abs: " << absHumidHigherThanAvg.size() << endl;
-//
-//    return 0;
-//
-//}
-
+/**
+ * Read and process data from csv file
+ * @param inFile input stream to operate on files
+ * @param fields vector stores each line info
+ * @param airQualityCollection vector stores AirQuality objects
+ */
 void getData(ifstream &inFile, vector<string>& fields, vector<AirQuality>& airQualityCollection)
 {
     static const int DATE_IDX = 0;
@@ -187,6 +127,11 @@ void getData(ifstream &inFile, vector<string>& fields, vector<AirQuality>& airQu
     inFile.close();
 }
 
+/**
+ * Convert string to Date object
+ * @param inputStr input string of Date info
+ * @return Date object
+ */
 Date processDate(string inputStr)
 {
     string delimiter = "/";
@@ -215,6 +160,11 @@ Date processDate(string inputStr)
     return dateVal;
 }
 
+/**
+ * Convert string to Time object
+ * @param inputStr input string of Time info
+ * @return Time object
+ */
 Time processTime(string inputStr)
 {
     string delimiter = ":";
@@ -243,6 +193,13 @@ Time processTime(string inputStr)
     return timeVal;
 }
 
+/**
+ * Calculate average temperature for that month
+ * @param yearInput target year
+ * @param monthInput target month
+ * @param airQualityCollection vector stores AirQuality objects
+ * @return average temperature for that month
+ */
 double calculateAvgTemp(int yearInput, int monthInput, vector<AirQuality>& airQualityCollection)
 {
     static const double MISS_VALUE = -200;
@@ -266,6 +223,13 @@ double calculateAvgTemp(int yearInput, int monthInput, vector<AirQuality>& airQu
     }
 }
 
+/**
+  * Calculate average relative humidity for that month
+  * @param yearInput target year
+  * @param monthInput target month
+  * @param airQualityCollection vector stores AirQuality objects
+  * @return average relative humidity for that month
+  */
 double calculateRelHumidity(int yearInput, int monthInput, vector<AirQuality>& airQualityCollection)
 {
     static const double MISS_VALUE = -200;
@@ -289,7 +253,13 @@ double calculateRelHumidity(int yearInput, int monthInput, vector<AirQuality>& a
     }
 }
 
-
+/**
+ * Calculate average absolute humidity for that month
+ * @param yearInput target year
+ * @param monthInput target month
+ * @param airQualityCollection vector stores AirQuality objects
+ * @return average absolute humidity for that month
+ */
 double calculateAbsHumidity(int yearInput, int monthInput, vector<AirQuality>& airQualityCollection)
 {
     static const double MISS_VALUE = -200;
@@ -313,6 +283,14 @@ double calculateAbsHumidity(int yearInput, int monthInput, vector<AirQuality>& a
     }
 }
 
+/**
+ * Find the temperature, and relative humidity at that date and time
+ * @param dateInput target date
+ * @param timeInput target time
+ * @param currentTemp temperature at that date and time
+ * @param currentRelHumidity relative humidity at that date and time
+ * @param airQualityCollection vector stores AirQuality objects
+ */
 void displayTempAndRelHumidity(Date dateInput, Time timeInput, double &currentTemp, double &currentRelHumidity, vector<AirQuality>& airQualityCollection)
 {
     for (int i = 0; i < airQualityCollection.size(); i++){
@@ -326,6 +304,13 @@ void displayTempAndRelHumidity(Date dateInput, Time timeInput, double &currentTe
     currentRelHumidity = 0;
 }
 
+/**
+ * Find the highest temperature for that month
+ * @param yearInput target year
+ * @param monthInput target month
+ * @param airQualityCollection vector stores AirQuality objects
+ * @return highest temperature for that month
+ */
 double displayMaxTemp(int yearInput, int monthInput, vector<AirQuality>& airQualityCollection)
 {
     static const double THRESHOLD = -100;
@@ -338,6 +323,13 @@ double displayMaxTemp(int yearInput, int monthInput, vector<AirQuality>& airQual
     return maxTemp;
 }
 
+/**
+ * Find the highest relative humidity for that month
+ * @param yearInput target year
+ * @param monthInput target month
+ * @param airQualityCollection vector stores AirQuality objects
+ * @return highest relative humidity for that month
+ */
 double displayMaxRelHumidity(int yearInput, int monthInput, vector<AirQuality>& airQualityCollection)
 {
     static const double THRESHOLD = -100;
@@ -350,6 +342,13 @@ double displayMaxRelHumidity(int yearInput, int monthInput, vector<AirQuality>& 
     return maxRelHumidity;
 }
 
+/**
+ * Find the highest absolute humidity for that month
+ * @param yearInput target year
+ * @param monthInput target month
+ * @param airQualityCollection vector stores AirQuality objects
+ * @return highest absolute humidity for that month
+ */
 double displayMaxAbsHumidity(int yearInput, int monthInput, vector<AirQuality>& airQualityCollection)
 {
     static const double THRESHOLD = -100;
@@ -362,6 +361,13 @@ double displayMaxAbsHumidity(int yearInput, int monthInput, vector<AirQuality>& 
     return maxAbsHumidity;
 }
 
+/**
+ * Find AirQuality objects with temperature higher than the average temperature for that month
+ * @param yearInput target year
+ * @param monthInput target month
+ * @param airQualityCollection vector stores AirQuality objects
+ * @param tempHigherThanAvg vector stores AirQuality objects with temperature higher than the average temperature for that month
+ */
 void findTempHigherThanAvg(int yearInput, int monthInput, vector<AirQuality>& airQualityCollection, vector<AirQuality>& tempHigherThanAvg)
 {
     double avgTemp = calculateAvgTemp(yearInput, monthInput, airQualityCollection);
@@ -379,6 +385,13 @@ void findTempHigherThanAvg(int yearInput, int monthInput, vector<AirQuality>& ai
     }
 }
 
+/**
+ * Find AirQuality objects with relative humidity higher than the average relative humidity for that month
+ * @param yearInput target year
+ * @param monthInput target month
+ * @param airQualityCollection vector stores AirQuality objects
+ * @param relHumidHigherThanAvg vector stores AirQuality objects with relative humidity higher than the average relative humidity for that month
+ */
 void findRelHumidHigherThanAvg(int yearInput, int monthInput, vector<AirQuality>& airQualityCollection, vector<AirQuality>& relHumidHigherThanAvg)
 {
     double avgRelHumid = calculateRelHumidity(yearInput, monthInput, airQualityCollection);
@@ -396,6 +409,13 @@ void findRelHumidHigherThanAvg(int yearInput, int monthInput, vector<AirQuality>
     }
 }
 
+/**
+ * Find AirQuality objects with absolute humidity higher than the average absolute humidity for that month
+ * @param yearInput target year
+ * @param monthInput target month
+ * @param airQualityCollection vector stores AirQuality objects
+ * @param absHumidHigherThanAvg vector stores AirQuality objects with absolute humidity higher than the average absolute humidity for that month
+ */
 void findAbsHumidHigherThanAvg(int yearInput, int monthInput, vector<AirQuality>& airQualityCollection, vector<AirQuality>& absHumidHigherThanAvg)
 {
     double avgAbsHumid = calculateAbsHumidity(yearInput, monthInput, airQualityCollection);
