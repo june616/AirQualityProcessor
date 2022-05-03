@@ -26,6 +26,18 @@ double displayMaxAbsHumidity(int yearInput, int monthInput, vector<AirQuality>& 
 void findTempHigherThanAvg(int yearInput, int monthInput, vector<AirQuality>& airQualityCollection, vector<AirQuality>& tempHigherThanAvg);
 void findRelHumidHigherThanAvg(int yearInput, int monthInput, vector<AirQuality>& airQualityCollection, vector<AirQuality>& relHumidHigherThanAvg);
 void findAbsHumidHigherThanAvg(int yearInput, int monthInput, vector<AirQuality>& airQualityCollection, vector<AirQuality>& absHumidHigherThanAvg);
+void showWelcomeMsg();
+void showMenu();
+int  userChoice();
+bool validMonth(int monthInput);
+void doUserChoice(int option, vector<AirQuality>& airQualityCollection);
+Time getValidTime();
+int getValidInputMonth();
+int getValidInputYear();
+int getValidInputDay(int inputYear, int inputMonth);
+void doCalOrDis(int option, int yearInput, int monthInput,vector<AirQuality>& airQualityCollection);
+void doCalThanAvg(int option, int yearInput, int monthInput, vector<AirQuality>& airQualityCollection, vector<AirQuality>& absHumidHigherThanAvg);
+void doFindTempAndHum(Date inputDate, Time inputTime, double &currentTemp, double &currentRelHumidity, vector<AirQuality>& airQualityCollection);
 
 
 int main()
@@ -41,54 +53,89 @@ int main()
     vector<string> fields;
     vector<AirQuality> airQualityCollection;
     getData(myFile, fields, airQualityCollection);
-
-    // just testing
-//    for (int i = 0; i < airQualityCollection.size(); i++){
-//        cout << airQualityCollection.at(i) << endl;
-//    }
-
-    // option 1-3
-    // ps: if cannot find data corresponding to monthInput, return 0, instead of nan
-    cout << "avg temp is: " << calculateAvgTemp(4, 3, airQualityCollection) << endl;
-    cout << "avg relHumidity is: " << calculateRelHumidity(4, 3, airQualityCollection) << endl;
-    cout << "abs relHumidity is: " << calculateAbsHumidity(4, 3, airQualityCollection) << endl;
-
-    // option 4
-//    Date d1(10, 3, 4);
-//    Time t1(0, 0, 18);
-//    double currentTemp, currentRelHumidity;
-//    displayTempAndRelHumidity(d1, t1, currentTemp, currentRelHumidity, airQualityCollection);
-//    cout << "At that date and time, temp is: " << currentTemp << ", rel humid is: " << currentRelHumidity << endl;
-
-    // if cannot find it, both return 0
-//    Date d2(10, 20, 4);
-//    Time t2(0, 0, 18);
-//    double currentTemp1, currentRelHumidity1;
-//    displayTempAndRelHumidity(d2, t2, currentTemp1, currentRelHumidity1, airQualityCollection);
-//    cout << "At that date and time, temp is: " << currentTemp1 << ", rel humid is: " << currentRelHumidity1 << endl;
-
-    // option 5-7
-    // if cannot find data corresponding to monthInput, return -100
-    cout << "max temp is: " << displayMaxTemp(4, 3, airQualityCollection) << endl;
-    cout << "max rel is: " << displayMaxRelHumidity(4, 3, airQualityCollection) << endl;
-    cout << "max abs is: " << displayMaxAbsHumidity(4, 3, airQualityCollection) << endl;
-
-    // option 8-10
-    vector<AirQuality> tempHigherThanAvg;
-    findTempHigherThanAvg(4, 3, airQualityCollection, tempHigherThanAvg);
-    cout << "Higher than avg temp num: " << tempHigherThanAvg.size() << endl;
-
-    vector<AirQuality>relHumidHigherThanAvg;
-    findRelHumidHigherThanAvg(4, 3, airQualityCollection, relHumidHigherThanAvg);
-    cout << "Higher than avg rel num: " << relHumidHigherThanAvg.size() << endl;
-
-    vector<AirQuality>absHumidHigherThanAvg;
-    findAbsHumidHigherThanAvg(4, 3, airQualityCollection, absHumidHigherThanAvg);
-    cout << "Higher than avg abs: " << absHumidHigherThanAvg.size() << endl;
-
+    showWelcomeMsg();
+    showMenu();
+    int res = userChoice();
+    int EXIT = -1;
+    while (res != EXIT)
+    {
+        doUserChoice(res, airQualityCollection);
+        cout << endl;
+        showMenu();
+        res = userChoice();
+        if (res == EXIT)
+        {
+            break;
+        }
+    }
     return 0;
-
 }
+
+
+
+
+//
+//int main()
+//{
+//    ifstream myFile("AirQualityUCI.csv");
+//
+//    if (!myFile.is_open())
+//    {
+//        cout << "File not found." << endl;
+//        return 1;
+//    }
+//
+//    vector<string> fields;
+//    vector<AirQuality> airQualityCollection;
+//    getData(myFile, fields, airQualityCollection);
+//
+//    // just testing
+////    for (int i = 0; i < airQualityCollection.size(); i++){
+////        cout << airQualityCollection.at(i) << endl;
+////    }
+//
+//    // option 1-3
+//    // ps: if cannot find data corresponding to monthInput, return 0, instead of nan
+//    cout << "avg temp is: " << calculateAvgTemp(4, 3, airQualityCollection) << endl;
+//    cout << "avg relHumidity is: " << calculateRelHumidity(4, 3, airQualityCollection) << endl;
+//    cout << "abs relHumidity is: " << calculateAbsHumidity(4, 3, airQualityCollection) << endl;
+//
+//    // option 4
+////    Date d1(10, 3, 4);
+////    Time t1(0, 0, 18);
+////    double currentTemp, currentRelHumidity;
+////    displayTempAndRelHumidity(d1, t1, currentTemp, currentRelHumidity, airQualityCollection);
+////    cout << "At that date and time, temp is: " << currentTemp << ", rel humid is: " << currentRelHumidity << endl;
+//
+//    // if cannot find it, both return 0
+////    Date d2(10, 20, 4);
+////    Time t2(0, 0, 18);
+////    double currentTemp1, currentRelHumidity1;
+////    displayTempAndRelHumidity(d2, t2, currentTemp1, currentRelHumidity1, airQualityCollection);
+////    cout << "At that date and time, temp is: " << currentTemp1 << ", rel humid is: " << currentRelHumidity1 << endl;
+//
+//    // option 5-7
+//    // if cannot find data corresponding to monthInput, return -100
+//    cout << "max temp is: " << displayMaxTemp(4, 3, airQualityCollection) << endl;
+//    cout << "max rel is: " << displayMaxRelHumidity(4, 3, airQualityCollection) << endl;
+//    cout << "max abs is: " << displayMaxAbsHumidity(4, 3, airQualityCollection) << endl;
+//
+//    // option 8-10
+//    vector<AirQuality> tempHigherThanAvg;
+//    findTempHigherThanAvg(4, 3, airQualityCollection, tempHigherThanAvg);
+//    cout << "Higher than avg temp num: " << tempHigherThanAvg.size() << endl;
+//
+//    vector<AirQuality>relHumidHigherThanAvg;
+//    findRelHumidHigherThanAvg(4, 3, airQualityCollection, relHumidHigherThanAvg);
+//    cout << "Higher than avg rel num: " << relHumidHigherThanAvg.size() << endl;
+//
+//    vector<AirQuality>absHumidHigherThanAvg;
+//    findAbsHumidHigherThanAvg(4, 3, airQualityCollection, absHumidHigherThanAvg);
+//    cout << "Higher than avg abs: " << absHumidHigherThanAvg.size() << endl;
+//
+//    return 0;
+//
+//}
 
 void getData(ifstream &inFile, vector<string>& fields, vector<AirQuality>& airQualityCollection)
 {
@@ -363,6 +410,395 @@ void findAbsHumidHigherThanAvg(int yearInput, int monthInput, vector<AirQuality>
                 absHumidHigherThanAvg.push_back(airQualityCollection[i]);
             }
         }
+    }
+}
+
+void showWelcomeMsg()
+{
+    cout << endl;
+    cout << "Welcome to the Air Quality Processor!" << endl;
+    cout << endl;
+}
+
+void showMenu()
+{
+    cout << "******************************************************************************" << endl;
+    cout << "*                                 MENU                                       *" << endl;
+    cout << "* 0.  Display the average temperature for a certain month.                   *" << endl;
+    cout << "* 1.  Display the average relative humidity for a certain month.             *" << endl;
+    cout << "* 2.  Display the average absolute humidity temperature for a certain month. *" << endl;
+    cout << "* 3.  Display the temperature and temperature at a certain date and time.    *" << endl;
+    cout << "* 4.  Display the highest temperature for a certain month.                   *" << endl;
+    cout << "* 5.  Display the highest relative humidity value for a certain month.       *" << endl;
+    cout << "* 6.  Display the highest absolute humidity for a certain month.             *" << endl;
+    cout << "* 7.  Display temperature higher than the average for a certain month.       *" << endl;
+    cout << "* 8.  Display relative humidity higher than the average for a certain month. *" << endl;
+    cout << "* 9. Display absolute humidity higher than the average for a certain month. *" << endl;
+    cout << "*                                                                            *" << endl;
+    cout << "******************************************************************************" << endl;
+}
+
+int userChoice()
+{
+    cout << endl;
+    cout << "------------------------------------------------------------------------------" << endl;
+    cout << "Please select your option by enter the No." << endl
+         << "Enter -1 when you finished." << endl;
+    int MAX_OPTION = 10;
+    bool selecting = true;
+    while (selecting)
+    {
+        int userInput;
+        cin >> userInput;
+        while (cin.fail())
+        {
+            cin.clear();
+            int const IGNORE_SIZE = 9999999;
+            cin.ignore(IGNORE_SIZE, '\n');
+            cout << "ERROR: " << endl;
+            cout << "Invalid option. Only number accepted. Please Re-enter." << endl;
+            showMenu();
+            cin >> userInput;
+        }
+        if (userInput >= -1 && userInput <= MAX_OPTION)
+        {
+            selecting = false;
+            return userInput;
+        }
+        else
+        {
+            cout << "ERROR: " << endl;
+            cout << "Invalid option. Option out of range. Please Re-enter." << endl;
+            showMenu();
+        }
+    }
+    return -1;
+}
+
+bool validMonth(int monthInput)
+{
+    int MIN_MONTH = 1;
+    int MAX_MONTH = 12;
+    return (monthInput >= MIN_MONTH && monthInput <= MAX_MONTH);
+}
+
+bool validTime(int h, int m, int s)
+{
+    int MIN_TIME = 0;
+    int MAX_HOUR = 24;
+    int MAX_MIN_SEC = 59;
+    bool hourValidity = ((h >= MIN_TIME) && (h <= MAX_HOUR));
+    bool minValidity = ((m >= MIN_TIME) && (m <= MAX_MIN_SEC));
+    bool secValidity = ((s >= MIN_TIME ) && (s <= MAX_MIN_SEC));
+    return (hourValidity && minValidity && secValidity);
+}
+
+Time getValidTime()
+{
+    bool invalid = true;
+    while (invalid)
+    {
+        int inputHour, inputMin, inputSec;
+        cout << "Please enter the value of hour." << endl;
+        cin >> inputHour;
+        while (cin.fail())
+        {
+            cin.clear();
+            int const IGNORE_SIZE = 9999999;
+            cin.ignore(IGNORE_SIZE, '\n');
+            cout << "ERROR: " << endl;
+            cout << "Invalid option. Only number accepted. Please Re-enter." << endl;
+            cin >> inputHour;
+        }
+        cout << "Please enter the value of minutes." << endl;
+        cin >> inputMin;
+        while (cin.fail())
+        {
+            cin.clear();
+            int const IGNORE_SIZE = 9999999;
+            cin.ignore(IGNORE_SIZE, '\n');
+            cout << "ERROR: " << endl;
+            cout << "Invalid option. Only number accepted. Please Re-enter." << endl;
+            cin >> inputMin;
+        }
+        cout << "Please enter the value of seconds." << endl;
+        cin >> inputSec;
+        while (cin.fail())
+        {
+            cin.clear();
+            int const IGNORE_SIZE = 9999999;
+            cin.ignore(IGNORE_SIZE, '\n');
+            cout << "ERROR: " << endl;
+            cout << "Invalid option. Only number accepted. Please Re-enter." << endl;
+            cin >> inputSec;
+        }
+        if (validTime(inputHour, inputMin, inputSec))
+        {
+            invalid = false;
+            return Time(inputSec, inputMin, inputHour);
+        }
+        else
+        {
+            cout << "Invalid combination, please Re-enter." << endl;
+        }
+    }
+    return Time();
+}
+
+int getValidInputYear()
+{
+    int yearInput;
+    cout << "Please enter a year: " << endl;
+    cin >> yearInput;
+    while (cin.fail())
+    {
+        cin.clear();
+        int const IGNORE_SIZE = 9999999;
+        cin.ignore(IGNORE_SIZE, '\n');
+        cout << "ERROR: " << endl;
+        cout << "Invalid option. Only number accepted. Please Re-enter." << endl;
+        cin >> yearInput;
+    }
+    return yearInput;
+}
+
+int getValidInputMonth()
+{
+    int monthInput;
+    cout << "Please enter a month: " << endl;
+    cin >> monthInput;
+    while (cin.fail())
+    {
+        cin.clear();
+        int const IGNORE_SIZE = 9999999;
+        cin.ignore(IGNORE_SIZE, '\n');
+        cout << "ERROR: " << endl;
+        cout << "Invalid option. Only number accepted. Please Re-enter." << endl;
+        cin >> monthInput;
+    }
+    while (!validMonth(monthInput)) {
+        cout << "Month should be in range of [1, 12], inclusive" << endl;
+        cout << "Please re-enter." << endl;
+        cin >> monthInput;
+        while (cin.fail()) {
+            cin.clear();
+            int const IGNORE_SIZE = 9999999;
+            cin.ignore(IGNORE_SIZE, '\n');
+            cout << "ERROR: " << endl;
+            cout << "Invalid option. Only number accepted. Please Re-enter." << endl;
+            cin >> monthInput;
+        }
+    }
+    return monthInput;
+}
+
+bool validDay(int inputYear, int inputMonth, int inputDay) {
+    int validDay[] = {31,28,31,30,31,30,31,31,30,31,30,31};
+    if ((inputYear % 4 == 0) && (inputYear % 100 != 0) || (inputYear % 400 == 0))
+    {
+        int februaryIndex = 2;
+        validDay[februaryIndex] = 29;
+    }
+    int SHIFT = 1;
+    return ((inputDay > 0) && (inputDay <= (validDay[(inputMonth) - SHIFT])));
+}
+
+int getValidInputDay(int inputYear, int inputMonth) {
+    int dayInput;
+    cout << "Please enter a day: " << endl;
+    cin >> dayInput;
+    while (cin.fail())
+    {
+        cin.clear();
+        int const IGNORE_SIZE = 9999999;
+        cin.ignore(IGNORE_SIZE, '\n');
+        cout << "ERROR: " << endl;
+        cout << "Invalid option. Only number accepted. Please Re-enter." << endl;
+        cin >> dayInput;
+    }
+    while (!validDay(inputYear,inputMonth,dayInput)) {
+        cout << "Input day is not valid, there is no " << dayInput << " in the month of " << inputMonth << endl;
+        cout << "Please re-enter." << endl;
+        cin >> dayInput;
+        while (cin.fail()) {
+            cin.clear();
+            int const IGNORE_SIZE = 9999999;
+            cin.ignore(IGNORE_SIZE, '\n');
+            cout << "ERROR: " << endl;
+            cout << "Invalid option. Only number accepted. Please Re-enter." << endl;
+            cin >> dayInput;
+        }
+    }
+    return dayInput;
+}
+
+void doUserChoice(int option, vector<AirQuality>& airQualityCollection)
+{
+    int EXIT = -1;
+    if (option == EXIT)
+    {
+        return;
+        // exit from the function
+    }
+    int yearInput = getValidInputYear();
+    int monthInput = getValidInputMonth();
+    if (option == 3)
+    {
+        int dayInput = getValidInputDay(yearInput, monthInput);
+        Date curDay = Date(dayInput, monthInput, yearInput);
+        Time curTime = getValidTime();
+        double curTemp, curRelHumidity;
+        doFindTempAndHum(curDay, curTime, curTemp, curRelHumidity, airQualityCollection);
+    }
+    else
+    {
+        if (option == 0 || option == 1 || option == 2 ||
+            option == 4 || option == 5 || option == 6)
+        {
+
+            doCalOrDis(option, yearInput, monthInput, airQualityCollection);
+        }
+        else
+        {
+            vector<AirQuality> res;
+            doCalThanAvg(option, yearInput, monthInput, airQualityCollection, res);
+        }
+    }
+}
+
+void doCalOrDis(int option, int yearInput, int monthInput,vector<AirQuality>& airQualityCollection)
+{
+    double res;
+    int NO_RECORD_CAL = 0;
+    int NO_RECORD_DIS = -100;
+    switch (option) {
+        case 0:
+            res = calculateAvgTemp(yearInput, monthInput, airQualityCollection);
+            if (res == NO_RECORD_CAL)
+            {
+                cout << "No records found." << endl;
+            }
+            else
+            {
+                cout << "The average temperature is: " << res << endl;
+            }
+            break;
+        case 1:
+            res = calculateRelHumidity(yearInput, monthInput, airQualityCollection);
+            if (res == NO_RECORD_CAL)
+            {
+                cout << "No records found." << endl;
+            }
+            else
+            {
+                cout << "The average relative humidity is: " << res << endl;
+            }
+            break;
+        case 2:
+            res = calculateAbsHumidity(yearInput, monthInput, airQualityCollection);
+            if (res == NO_RECORD_CAL)
+            {
+                cout << "No records found." << endl;
+            }
+            else
+            {
+                cout << "The average absolute humidity is: " << res << endl;
+            }
+            break;
+        case 4:
+            res = displayMaxTemp(yearInput, monthInput, airQualityCollection);
+            if (res == NO_RECORD_DIS)
+            {
+                cout << "No records found." << endl;
+            }
+            else
+            {
+                cout << "The highest temperature is: " << res << endl;
+            }
+            break;
+        case 5:
+            res = displayMaxRelHumidity(yearInput, monthInput, airQualityCollection);
+            if (res == NO_RECORD_DIS)
+            {
+                cout << "No records found." << endl;
+            }
+            else
+            {
+                cout << "The highest relative humidity is: " << res << endl;
+            }
+            break;
+        case 6:
+            res = displayMaxAbsHumidity(yearInput, monthInput, airQualityCollection);
+            if (res == NO_RECORD_DIS)
+            {
+                cout << "No records found." << endl;
+            }
+            else
+            {
+                cout << "The highest absolute humidity is: " << res << endl;
+            }
+            break;
+    }
+}
+
+void doCalThanAvg(int option, int yearInput, int monthInput, vector<AirQuality>& airQualityCollection, vector<AirQuality>& res)
+{
+    switch (option) {
+        case 7:
+            findTempHigherThanAvg(yearInput, monthInput, airQualityCollection, res);
+            if (res.size() == 0)
+            {
+                cout << "No records found." << endl;
+            }
+            else
+            {
+                cout << "The dates and times when temperature is higher than the average are listed below: " << endl;
+                for (int i = 0; i < res.size(); i++)
+                {
+                    cout << "Date:\t" << res[i].getDate() << "\t" << "Time:\t" << res[i].getTime() << endl;
+                }
+            }
+        case 8:
+            findRelHumidHigherThanAvg(yearInput, monthInput, airQualityCollection, res);
+            if (res.size() == 0)
+            {
+                cout << "No records found." << endl;
+            }
+            else
+            {
+                cout << "The dates and times when temperature is higher than the average are listed below: " << endl;
+                for (int i = 0; i < res.size(); i++)
+                {
+                    cout << "Date:\t" << res[i].getDate() << "\t" << "Time:\t" << res[i].getTime() << endl;
+                }
+            }
+        case 9:
+            findAbsHumidHigherThanAvg(yearInput, monthInput, airQualityCollection, res);
+            if (res.size() == 0)
+            {
+                cout << "No records found." << endl;
+            }
+            else
+            {
+                cout << "The dates and times when temperature is higher than the average are listed below: " << endl;
+                for (int i = 0; i < res.size(); i++)
+                {
+                    cout << "Date:\t" << res[i].getDate() << "\t" << "Time:\t" << res[i].getTime() << endl;
+                }
+            }
+    }
+}
+
+void doFindTempAndHum(Date inputDate, Time inputTime, double &currentTemp, double &currentRelHumidity, vector<AirQuality>& airQualityCollection)
+{
+    displayTempAndRelHumidity(inputDate, inputTime, currentTemp, currentRelHumidity,airQualityCollection);
+    if (currentTemp == 0 && currentRelHumidity == 0)
+    {
+        cout << "No records found." << endl;
+    }
+    else
+    {
+        cout << "At that date and time, temp is: " << currentTemp << ", rel humid is: " << currentRelHumidity << endl;
     }
 }
 
