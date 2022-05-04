@@ -1,3 +1,6 @@
 C:/Users/nicho/Desktop/GitHub/CS5008_LastAssignment/AirQualityProcessor/final_test/cmake-build-debug/CMakeFiles/AirQualityTest.dir
+C:/Users/nicho/Desktop/GitHub/CS5008_LastAssignment/AirQualityProcessor/final_test/cmake-build-debug/CMakeFiles/main.dir
+C:/Users/nicho/Desktop/GitHub/CS5008_LastAssignment/AirQualityProcessor/final_test/cmake-build-debug/CMakeFiles/dateTest.dir
+C:/Users/nicho/Desktop/GitHub/CS5008_LastAssignment/AirQualityProcessor/final_test/cmake-build-debug/CMakeFiles/timeTest.dir
 C:/Users/nicho/Desktop/GitHub/CS5008_LastAssignment/AirQualityProcessor/final_test/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/nicho/Desktop/GitHub/CS5008_LastAssignment/AirQualityProcessor/final_test/cmake-build-debug/CMakeFiles/rebuild_cache.dir

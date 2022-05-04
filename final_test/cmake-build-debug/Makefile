@@ -128,12 +128,54 @@ AirQualityTest/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AirQualityTest.dir\build.make CMakeFiles/AirQualityTest.dir/build
 .PHONY : AirQualityTest/fast
 
+#=============================================================================
+# Target rules for targets named main
+
+# Build rule for target.
+main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 main
+.PHONY : main
+
+# fast build rule for target.
+main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
+
+#=============================================================================
+# Target rules for targets named dateTest
+
+# Build rule for target.
+dateTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 dateTest
+.PHONY : dateTest
+
+# fast build rule for target.
+dateTest/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dateTest.dir\build.make CMakeFiles/dateTest.dir/build
+.PHONY : dateTest/fast
+
+#=============================================================================
+# Target rules for targets named timeTest
+
+# Build rule for target.
+timeTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 timeTest
+.PHONY : timeTest
+
+# fast build rule for target.
+timeTest/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\timeTest.dir\build.make CMakeFiles/timeTest.dir/build
+.PHONY : timeTest/fast
+
 AirQuality.obj: AirQuality.cpp.obj
 .PHONY : AirQuality.obj
 
 # target to build an object file
 AirQuality.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AirQualityTest.dir\build.make CMakeFiles/AirQualityTest.dir/AirQuality.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/AirQuality.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dateTest.dir\build.make CMakeFiles/dateTest.dir/AirQuality.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\timeTest.dir\build.make CMakeFiles/timeTest.dir/AirQuality.cpp.obj
 .PHONY : AirQuality.cpp.obj
 
 AirQuality.i: AirQuality.cpp.i
@@ -142,6 +184,9 @@ AirQuality.i: AirQuality.cpp.i
 # target to preprocess a source file
 AirQuality.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AirQualityTest.dir\build.make CMakeFiles/AirQualityTest.dir/AirQuality.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/AirQuality.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dateTest.dir\build.make CMakeFiles/dateTest.dir/AirQuality.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\timeTest.dir\build.make CMakeFiles/timeTest.dir/AirQuality.cpp.i
 .PHONY : AirQuality.cpp.i
 
 AirQuality.s: AirQuality.cpp.s
@@ -150,6 +195,9 @@ AirQuality.s: AirQuality.cpp.s
 # target to generate assembly for a file
 AirQuality.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AirQualityTest.dir\build.make CMakeFiles/AirQualityTest.dir/AirQuality.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/AirQuality.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dateTest.dir\build.make CMakeFiles/dateTest.dir/AirQuality.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\timeTest.dir\build.make CMakeFiles/timeTest.dir/AirQuality.cpp.s
 .PHONY : AirQuality.cpp.s
 
 AirQualityTest.obj: AirQualityTest.cpp.obj
@@ -182,6 +230,9 @@ Date.obj: Date.cpp.obj
 # target to build an object file
 Date.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AirQualityTest.dir\build.make CMakeFiles/AirQualityTest.dir/Date.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/Date.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dateTest.dir\build.make CMakeFiles/dateTest.dir/Date.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\timeTest.dir\build.make CMakeFiles/timeTest.dir/Date.cpp.obj
 .PHONY : Date.cpp.obj
 
 Date.i: Date.cpp.i
@@ -190,6 +241,9 @@ Date.i: Date.cpp.i
 # target to preprocess a source file
 Date.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AirQualityTest.dir\build.make CMakeFiles/AirQualityTest.dir/Date.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/Date.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dateTest.dir\build.make CMakeFiles/dateTest.dir/Date.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\timeTest.dir\build.make CMakeFiles/timeTest.dir/Date.cpp.i
 .PHONY : Date.cpp.i
 
 Date.s: Date.cpp.s
@@ -198,6 +252,9 @@ Date.s: Date.cpp.s
 # target to generate assembly for a file
 Date.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AirQualityTest.dir\build.make CMakeFiles/AirQualityTest.dir/Date.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/Date.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dateTest.dir\build.make CMakeFiles/dateTest.dir/Date.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\timeTest.dir\build.make CMakeFiles/timeTest.dir/Date.cpp.s
 .PHONY : Date.cpp.s
 
 Time.obj: Time.cpp.obj
@@ -206,6 +263,9 @@ Time.obj: Time.cpp.obj
 # target to build an object file
 Time.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AirQualityTest.dir\build.make CMakeFiles/AirQualityTest.dir/Time.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/Time.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dateTest.dir\build.make CMakeFiles/dateTest.dir/Time.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\timeTest.dir\build.make CMakeFiles/timeTest.dir/Time.cpp.obj
 .PHONY : Time.cpp.obj
 
 Time.i: Time.cpp.i
@@ -214,6 +274,9 @@ Time.i: Time.cpp.i
 # target to preprocess a source file
 Time.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AirQualityTest.dir\build.make CMakeFiles/AirQualityTest.dir/Time.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/Time.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dateTest.dir\build.make CMakeFiles/dateTest.dir/Time.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\timeTest.dir\build.make CMakeFiles/timeTest.dir/Time.cpp.i
 .PHONY : Time.cpp.i
 
 Time.s: Time.cpp.s
@@ -222,7 +285,82 @@ Time.s: Time.cpp.s
 # target to generate assembly for a file
 Time.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AirQualityTest.dir\build.make CMakeFiles/AirQualityTest.dir/Time.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/Time.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dateTest.dir\build.make CMakeFiles/dateTest.dir/Time.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\timeTest.dir\build.make CMakeFiles/timeTest.dir/Time.cpp.s
 .PHONY : Time.cpp.s
+
+dateTest.obj: dateTest.cpp.obj
+.PHONY : dateTest.obj
+
+# target to build an object file
+dateTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dateTest.dir\build.make CMakeFiles/dateTest.dir/dateTest.cpp.obj
+.PHONY : dateTest.cpp.obj
+
+dateTest.i: dateTest.cpp.i
+.PHONY : dateTest.i
+
+# target to preprocess a source file
+dateTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dateTest.dir\build.make CMakeFiles/dateTest.dir/dateTest.cpp.i
+.PHONY : dateTest.cpp.i
+
+dateTest.s: dateTest.cpp.s
+.PHONY : dateTest.s
+
+# target to generate assembly for a file
+dateTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dateTest.dir\build.make CMakeFiles/dateTest.dir/dateTest.cpp.s
+.PHONY : dateTest.cpp.s
+
+main.obj: main.cpp.obj
+.PHONY : main.obj
+
+# target to build an object file
+main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.cpp.obj
+.PHONY : main.cpp.obj
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.cpp.s
+.PHONY : main.cpp.s
+
+timeTest.obj: timeTest.cpp.obj
+.PHONY : timeTest.obj
+
+# target to build an object file
+timeTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\timeTest.dir\build.make CMakeFiles/timeTest.dir/timeTest.cpp.obj
+.PHONY : timeTest.cpp.obj
+
+timeTest.i: timeTest.cpp.i
+.PHONY : timeTest.i
+
+# target to preprocess a source file
+timeTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\timeTest.dir\build.make CMakeFiles/timeTest.dir/timeTest.cpp.i
+.PHONY : timeTest.cpp.i
+
+timeTest.s: timeTest.cpp.s
+.PHONY : timeTest.s
+
+# target to generate assembly for a file
+timeTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\timeTest.dir\build.make CMakeFiles/timeTest.dir/timeTest.cpp.s
+.PHONY : timeTest.cpp.s
 
 # Help Target
 help:
@@ -233,6 +371,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... AirQualityTest
+	@echo ... dateTest
+	@echo ... main
+	@echo ... timeTest
 	@echo ... AirQuality.obj
 	@echo ... AirQuality.i
 	@echo ... AirQuality.s
@@ -245,6 +386,15 @@ help:
 	@echo ... Time.obj
 	@echo ... Time.i
 	@echo ... Time.s
+	@echo ... dateTest.obj
+	@echo ... dateTest.i
+	@echo ... dateTest.s
+	@echo ... main.obj
+	@echo ... main.i
+	@echo ... main.s
+	@echo ... timeTest.obj
+	@echo ... timeTest.i
+	@echo ... timeTest.s
 .PHONY : help
 
 

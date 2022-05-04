@@ -63,6 +63,9 @@ CMAKE_BINARY_DIR = C:\Users\nicho\Desktop\GitHub\CS5008_LastAssignment\AirQualit
 
 # The main recursive "all" target.
 all: CMakeFiles/AirQualityTest.dir/all
+all: CMakeFiles/main.dir/all
+all: CMakeFiles/dateTest.dir/all
+all: CMakeFiles/timeTest.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,6 +74,9 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/AirQualityTest.dir/clean
+clean: CMakeFiles/main.dir/clean
+clean: CMakeFiles/dateTest.dir/clean
+clean: CMakeFiles/timeTest.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -98,6 +104,84 @@ AirQualityTest: CMakeFiles/AirQualityTest.dir/rule
 CMakeFiles/AirQualityTest.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AirQualityTest.dir\build.make CMakeFiles/AirQualityTest.dir/clean
 .PHONY : CMakeFiles/AirQualityTest.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/main.dir
+
+# All Build rule for target.
+CMakeFiles/main.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\nicho\Desktop\GitHub\CS5008_LastAssignment\AirQualityProcessor\final_test\cmake-build-debug\CMakeFiles --progress-num=11,12,13,14,15 "Built target main"
+.PHONY : CMakeFiles/main.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nicho\Desktop\GitHub\CS5008_LastAssignment\AirQualityProcessor\final_test\cmake-build-debug\CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nicho\Desktop\GitHub\CS5008_LastAssignment\AirQualityProcessor\final_test\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/main.dir/rule
+
+# Convenience name for target.
+main: CMakeFiles/main.dir/rule
+.PHONY : main
+
+# clean rule for target.
+CMakeFiles/main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/clean
+.PHONY : CMakeFiles/main.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/dateTest.dir
+
+# All Build rule for target.
+CMakeFiles/dateTest.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dateTest.dir\build.make CMakeFiles/dateTest.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dateTest.dir\build.make CMakeFiles/dateTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\nicho\Desktop\GitHub\CS5008_LastAssignment\AirQualityProcessor\final_test\cmake-build-debug\CMakeFiles --progress-num=6,7,8,9,10 "Built target dateTest"
+.PHONY : CMakeFiles/dateTest.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/dateTest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nicho\Desktop\GitHub\CS5008_LastAssignment\AirQualityProcessor\final_test\cmake-build-debug\CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/dateTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nicho\Desktop\GitHub\CS5008_LastAssignment\AirQualityProcessor\final_test\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/dateTest.dir/rule
+
+# Convenience name for target.
+dateTest: CMakeFiles/dateTest.dir/rule
+.PHONY : dateTest
+
+# clean rule for target.
+CMakeFiles/dateTest.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dateTest.dir\build.make CMakeFiles/dateTest.dir/clean
+.PHONY : CMakeFiles/dateTest.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/timeTest.dir
+
+# All Build rule for target.
+CMakeFiles/timeTest.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\timeTest.dir\build.make CMakeFiles/timeTest.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\timeTest.dir\build.make CMakeFiles/timeTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\nicho\Desktop\GitHub\CS5008_LastAssignment\AirQualityProcessor\final_test\cmake-build-debug\CMakeFiles --progress-num=16,17,18,19,20 "Built target timeTest"
+.PHONY : CMakeFiles/timeTest.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/timeTest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nicho\Desktop\GitHub\CS5008_LastAssignment\AirQualityProcessor\final_test\cmake-build-debug\CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/timeTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nicho\Desktop\GitHub\CS5008_LastAssignment\AirQualityProcessor\final_test\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/timeTest.dir/rule
+
+# Convenience name for target.
+timeTest: CMakeFiles/timeTest.dir/rule
+.PHONY : timeTest
+
+# clean rule for target.
+CMakeFiles/timeTest.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\timeTest.dir\build.make CMakeFiles/timeTest.dir/clean
+.PHONY : CMakeFiles/timeTest.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
