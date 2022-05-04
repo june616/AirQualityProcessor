@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/nicho/Desktop/GitHub/CS5008_Group/AirQualityProcessor/final_test
+# Install script for directory: C:/Users/nicho/Desktop/GitHub/CS5008_LastAssignment/AirQualityProcessor/final_test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/nicho/Desktop/GitHub/CS5008_Group/AirQualityProcessor/final_test/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/nicho/Desktop/GitHub/CS5008_LastAssignment/AirQualityProcessor/final_test/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

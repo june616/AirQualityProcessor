@@ -27,7 +27,7 @@
 					[
 						0
 					],
-					"name" : "final_test",
+					"name" : "final_project",
 					"targetIndexes" : 
 					[
 						0
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "final_test::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-final_test-Debug-0a17fd17b751fddde296.json",
-					"name" : "final_test",
+					"id" : "final_project::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-final_project-Debug-f5bf95fa3529664062ff.json",
+					"name" : "final_project",
 					"projectIndex" : 0
 				}
 			]
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/nicho/Desktop/GitHub/CS5008_Group/AirQualityProcessor/final_test/cmake-build-debug",
-		"source" : "C:/Users/nicho/Desktop/GitHub/CS5008_Group/AirQualityProcessor/final_test"
+		"build" : "C:/Users/nicho/Desktop/GitHub/CS5008_LastAssignment/AirQualityProcessor/final_project/cmake-build-debug",
+		"source" : "C:/Users/nicho/Desktop/GitHub/CS5008_LastAssignment/AirQualityProcessor/final_project"
 	},
 	"version" : 
 	{

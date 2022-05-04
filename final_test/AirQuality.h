@@ -5,9 +5,7 @@
 #define FINAL_PROJECT_AIR_QUALITY_H
 
 #include "Date.h"
-#include "Date.cpp"
 #include "Time.h"
-#include "Time.cpp"
 
 
 class AirQuality {

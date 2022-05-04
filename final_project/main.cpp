@@ -433,6 +433,9 @@ void findAbsHumidHigherThanAvg(int yearInput, int monthInput, vector<AirQuality>
     }
 }
 
+/**
+ * Show welcome message to the users
+ */
 void showWelcomeMsg()
 {
     cout << endl;
@@ -440,6 +443,9 @@ void showWelcomeMsg()
     cout << endl;
 }
 
+/**
+ * Show menu to the users
+ */
 void showMenu()
 {
     cout << "******************************************************************************" << endl;
@@ -458,6 +464,12 @@ void showMenu()
     cout << "******************************************************************************" << endl;
 }
 
+/**
+ * valid user's choice, if the user input a letter instead an integer,
+ * or the user input a number greater than 10 or less than -1,
+ * will print out the error message and let the user re-enter the value
+ * @return a valid choice
+ */
 int userChoice()
 {
     cout << endl;
@@ -495,6 +507,12 @@ int userChoice()
     return -1;
 }
 
+/**
+ * Validation check for the month input
+ * The month should be in range of [1, 12], inclusive
+ * @param monthInput - the month need to be checked
+ * @return true if the input value is a valid month
+ */
 bool validMonth(int monthInput)
 {
     int MIN_MONTH = 1;
@@ -502,6 +520,17 @@ bool validMonth(int monthInput)
     return (monthInput >= MIN_MONTH && monthInput <= MAX_MONTH);
 }
 
+
+/**
+ * validation check for the input time
+ * the valid hour should be in range of [0,24], inclusive
+ * the valid minutes and second should both
+ * be in range of [0, 59], inclusive
+ * @param h - the input hour
+ * @param m - the input minutes
+ * @param s - the input seconds
+ * @return true if the input is a valid time
+ */
 bool validTime(int h, int m, int s)
 {
     int MIN_TIME = 0;
@@ -513,6 +542,14 @@ bool validTime(int h, int m, int s)
     return (hourValidity && minValidity && secValidity);
 }
 
+/**
+ * Get a time from the user. will ask the user to enter
+ * the value of hour, minutes, and seconds separately.
+ * Will call validTime function to check whether the input is valid
+ * If there is an letter or the number is out of the range, will
+ * ask the user to input again.
+ * @return a valid time
+ */
 Time getValidTime()
 {
     bool invalid = true;
@@ -565,6 +602,10 @@ Time getValidTime()
     return Time();
 }
 
+/**
+ * Get a valid year from the user
+ * @return a valid year
+ */
 int getValidInputYear()
 {
     int yearInput;
@@ -582,6 +623,10 @@ int getValidInputYear()
     return yearInput;
 }
 
+/**
+ * get a valid month from the user
+ * @return a valid month
+ */
 int getValidInputMonth()
 {
     int monthInput;
@@ -612,6 +657,15 @@ int getValidInputMonth()
     return monthInput;
 }
 
+/**
+ * validation check for the day of the date
+ * will take into consideration of different day in each month and the
+ * leap year.
+ * @param inputYear - the year user enter
+ * @param inputMonth - the month user enter
+ * @param inputDay - the day user enter
+ * @return - true if the day is in a valid day for the certain month and year
+ */
 bool validDay(int inputYear, int inputMonth, int inputDay) {
     int validDay[] = {31,28,31,30,31,30,31,31,30,31,30,31};
     if ((inputYear % 4 == 0) && (inputYear % 100 != 0) || (inputYear % 400 == 0))
@@ -623,6 +677,12 @@ bool validDay(int inputYear, int inputMonth, int inputDay) {
     return ((inputDay > 0) && (inputDay <= (validDay[(inputMonth) - SHIFT])));
 }
 
+/**
+ * get a valid day from the user
+ * will call the function validDAy to check whether there is a certion day
+ * in a certain month
+ * @return a valid day
+ */
 int getValidInputDay(int inputYear, int inputMonth) {
     int dayInput;
     cout << "Please enter a day: " << endl;
@@ -652,6 +712,11 @@ int getValidInputDay(int inputYear, int inputMonth) {
     return dayInput;
 }
 
+/**
+ * call different function based on the user's choice
+ * @param option - the valid user's choice
+ * @param airQualityCollection - the dataSet need to be handled
+ */
 void doUserChoice(int option, vector<AirQuality>& airQualityCollection)
 {
     int EXIT = -1;
@@ -686,6 +751,14 @@ void doUserChoice(int option, vector<AirQuality>& airQualityCollection)
     }
 }
 
+/**
+ * Calculation or display. Will be called if the user's choice is
+ * 0,1,2,4,5,or 6.
+ * @param option - the choice
+ * @param yearInput - year
+ * @param monthInput - month
+ * @param airQualityCollection - the data set
+ */
 void doCalOrDis(int option, int yearInput, int monthInput,vector<AirQuality>& airQualityCollection)
 {
     double res;
@@ -761,6 +834,14 @@ void doCalOrDis(int option, int yearInput, int monthInput,vector<AirQuality>& ai
     }
 }
 
+/**
+ * calculation certain data greater than average
+ * @param option - user's choice
+ * @param yearInput - year
+ * @param monthInput - month
+ * @param airQualityCollection - dataSet
+ * @param res - temporary container
+ */
 void doCalThanAvg(int option, int yearInput, int monthInput, vector<AirQuality>& airQualityCollection, vector<AirQuality>& res)
 {
     switch (option) {
@@ -775,9 +856,12 @@ void doCalThanAvg(int option, int yearInput, int monthInput, vector<AirQuality>&
                 cout << "The dates and times when temperature is higher than the average are listed below: " << endl;
                 for (int i = 0; i < res.size(); i++)
                 {
-                    cout << "Date:\t" << res[i].getDate() << "\t" << "Time:\t" << res[i].getTime() << endl;
+                    cout << "Date: " << setw(2) << res[i].getDate() << setw(10)
+                         << "Time: " << setw(2) << res[i].getTime() << setw(18)
+                         << "Temperature: " << res[i].getTemp() << endl;
                 }
             }
+            break;
         case 8:
             findRelHumidHigherThanAvg(yearInput, monthInput, airQualityCollection, res);
             if (res.size() == 0)
@@ -786,12 +870,15 @@ void doCalThanAvg(int option, int yearInput, int monthInput, vector<AirQuality>&
             }
             else
             {
-                cout << "The dates and times when temperature is higher than the average are listed below: " << endl;
+                cout << "The dates and times when relative humidity is higher than the average are listed below: " << endl;
                 for (int i = 0; i < res.size(); i++)
                 {
-                    cout << "Date:\t" << res[i].getDate() << "\t" << "Time:\t" << res[i].getTime() << endl;
+                    cout << "Date: " << setw(2) << res[i].getDate() << setw(10)
+                         << "Time: " << setw(2) << res[i].getTime() << setw(24)
+                         << "Relative Humidity: " << res[i].getRelativeHumidity() << endl;
                 }
             }
+            break;
         case 9:
             findAbsHumidHigherThanAvg(yearInput, monthInput, airQualityCollection, res);
             if (res.size() == 0)
@@ -800,15 +887,26 @@ void doCalThanAvg(int option, int yearInput, int monthInput, vector<AirQuality>&
             }
             else
             {
-                cout << "The dates and times when temperature is higher than the average are listed below: " << endl;
+                cout << "The dates and times when absolute humidity is higher than the average are listed below: " << endl;
                 for (int i = 0; i < res.size(); i++)
                 {
-                    cout << "Date:\t" << res[i].getDate() << "\t" << "Time:\t" << res[i].getTime() << endl;
+                    cout << "Date: " << setw(2) << res[i].getDate() << setw(10)
+                         << "Time: " << setw(2) << res[i].getTime() << setw(24)
+                         << "Absolute Humidity: " << res[i].getAbsHumidity() << endl;
                 }
             }
+            break;
     }
 }
 
+/**
+ * Find a exertion data.
+ * @param inputDate - input date
+ * @param inputTime - input time
+ * @param currentTemp - current temp
+ * @param currentRelHumidity - current relative humidity
+ * @param airQualityCollection - dataSet
+ */
 void doFindTempAndHum(Date inputDate, Time inputTime, double &currentTemp, double &currentRelHumidity, vector<AirQuality>& airQualityCollection)
 {
     displayTempAndRelHumidity(inputDate, inputTime, currentTemp, currentRelHumidity,airQualityCollection);

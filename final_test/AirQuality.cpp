@@ -3,10 +3,6 @@
 //
 
 #include "AirQuality.h"
-#include "Date.h"
-#include "Date.cpp"
-#include "Time.h"
-#include "Time.cpp"
 
 AirQuality::AirQuality() {
     temp = 0.0;
