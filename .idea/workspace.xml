@@ -15,23 +15,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="237ba035-5284-4d10-aa23-0bdc4b7441fc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/.cmake/api/v1/reply/cache-v2-a862681ccfb005f19062.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-4e4bcd0ced03b41eaaed.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-708eddc8c8e383139ea6.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-d0094a50bb2071803777.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/.cmake/api/v1/reply/index-2022-04-26T00-00-16-0350.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/.cmake/api/v1/reply/target-final_project-Debug-f5bf95fa3529664062ff.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-aa3c9cbd49ae913ebafc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/.cmake/api/v1/reply/cache-v2-c61f85e9378e84c5b701.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-2b3dde3a920251ab4288.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-3ef02f02a2ac8a9733db.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-f5ebdc15457944623624.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/.cmake/api/v1/reply/index-2022-05-03T20-14-28-0582.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/.cmake/api/v1/reply/target-final_project-Debug-e1fc55874abe3d2ac5f7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-9002b9f304a9a6bc85b8.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/3.22.3/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/3.22.3/CMakeCCompiler.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/3.22.3/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/3.22.3/CMakeCXXCompiler.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/3.22.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/3.22.3/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/3.22.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/3.22.3/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/3.22.3/CMakeRCCompiler.cmake" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/3.22.3/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/3.22.3/CMakeSystem.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdC/a.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdCXX/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdC/CMakeCCompilerId.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdCXX/CMakeCXXCompilerId.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/CMakeError.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
@@ -45,18 +46,15 @@
       <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/final_project.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/final_project.dir/compiler_depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/final_project.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/final_project.dir/flags.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/final_project.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/final_project.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/final_project.dir/linklibs.rsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/final_project.dir/main.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/final_project.dir/main.cpp.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/final_project.dir/objects.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/final_project.dir/objects1.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/final_project.dir/main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/final_project.dir/main.cpp.o.d" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/final_project" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/final_project" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/final_project.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/final_project.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/final_project.exe" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/final_project.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/final_project/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_test/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/final_test/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_test/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/final_test/CMakeLists.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,26 +76,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "cmake.loaded.for.project": "true",
-    "last_opened_file_path": "/Users/junyaofeng/Desktop/5008 LAST/AirQualityProcessor",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;cmake.loaded.for.project&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/junyaofeng/Desktop/5008 LAST/AirQualityProcessor&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\nicho\Desktop\GitHub\CS5008_LastAssignment\AirQualityProcessor\final_test" />
+    </key>
+  </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="final_project" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="final_project" TARGET_NAME="final_project" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="final_project" RUN_TARGET_NAME="final_project">
@@ -115,6 +118,7 @@
       <option name="presentableId" value="Default" />
       <updated>1651608811593</updated>
       <workItem from="1651608813346" duration="564000" />
+      <workItem from="1651623611373" duration="199000" />
     </task>
     <servers />
   </component>

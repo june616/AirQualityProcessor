@@ -56,10 +56,10 @@ RM = "C:\Program Files\JetBrains\CLion 2022.1\bin\cmake\win\bin\cmake.exe" -E rm
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\nicho\Desktop\GitHub\CS5008_Group\AirQualityProcessor\final_test
+CMAKE_SOURCE_DIR = C:\Users\nicho\Desktop\GitHub\CS5008_LastAssignment\AirQualityProcessor\final_test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\nicho\Desktop\GitHub\CS5008_Group\AirQualityProcessor\final_test\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\nicho\Desktop\GitHub\CS5008_LastAssignment\AirQualityProcessor\final_test\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nicho\Desktop\GitHub\CS5008_Group\AirQualityProcessor\final_test\cmake-build-debug\CMakeFiles C:\Users\nicho\Desktop\GitHub\CS5008_Group\AirQualityProcessor\final_test\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nicho\Desktop\GitHub\CS5008_LastAssignment\AirQualityProcessor\final_test\cmake-build-debug\CMakeFiles C:\Users\nicho\Desktop\GitHub\CS5008_LastAssignment\AirQualityProcessor\final_test\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nicho\Desktop\GitHub\CS5008_Group\AirQualityProcessor\final_test\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nicho\Desktop\GitHub\CS5008_LastAssignment\AirQualityProcessor\final_test\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -116,41 +116,113 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named final_test
+# Target rules for targets named AirQualityTest
 
 # Build rule for target.
-final_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 final_test
-.PHONY : final_test
+AirQualityTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 AirQualityTest
+.PHONY : AirQualityTest
 
 # fast build rule for target.
-final_test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\final_test.dir\build.make CMakeFiles/final_test.dir/build
-.PHONY : final_test/fast
+AirQualityTest/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AirQualityTest.dir\build.make CMakeFiles/AirQualityTest.dir/build
+.PHONY : AirQualityTest/fast
 
-main.obj: main.cpp.obj
-.PHONY : main.obj
+AirQuality.obj: AirQuality.cpp.obj
+.PHONY : AirQuality.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\final_test.dir\build.make CMakeFiles/final_test.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+AirQuality.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AirQualityTest.dir\build.make CMakeFiles/AirQualityTest.dir/AirQuality.cpp.obj
+.PHONY : AirQuality.cpp.obj
 
-main.i: main.cpp.i
-.PHONY : main.i
+AirQuality.i: AirQuality.cpp.i
+.PHONY : AirQuality.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\final_test.dir\build.make CMakeFiles/final_test.dir/main.cpp.i
-.PHONY : main.cpp.i
+AirQuality.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AirQualityTest.dir\build.make CMakeFiles/AirQualityTest.dir/AirQuality.cpp.i
+.PHONY : AirQuality.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+AirQuality.s: AirQuality.cpp.s
+.PHONY : AirQuality.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\final_test.dir\build.make CMakeFiles/final_test.dir/main.cpp.s
-.PHONY : main.cpp.s
+AirQuality.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AirQualityTest.dir\build.make CMakeFiles/AirQualityTest.dir/AirQuality.cpp.s
+.PHONY : AirQuality.cpp.s
+
+AirQualityTest.obj: AirQualityTest.cpp.obj
+.PHONY : AirQualityTest.obj
+
+# target to build an object file
+AirQualityTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AirQualityTest.dir\build.make CMakeFiles/AirQualityTest.dir/AirQualityTest.cpp.obj
+.PHONY : AirQualityTest.cpp.obj
+
+AirQualityTest.i: AirQualityTest.cpp.i
+.PHONY : AirQualityTest.i
+
+# target to preprocess a source file
+AirQualityTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AirQualityTest.dir\build.make CMakeFiles/AirQualityTest.dir/AirQualityTest.cpp.i
+.PHONY : AirQualityTest.cpp.i
+
+AirQualityTest.s: AirQualityTest.cpp.s
+.PHONY : AirQualityTest.s
+
+# target to generate assembly for a file
+AirQualityTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AirQualityTest.dir\build.make CMakeFiles/AirQualityTest.dir/AirQualityTest.cpp.s
+.PHONY : AirQualityTest.cpp.s
+
+Date.obj: Date.cpp.obj
+.PHONY : Date.obj
+
+# target to build an object file
+Date.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AirQualityTest.dir\build.make CMakeFiles/AirQualityTest.dir/Date.cpp.obj
+.PHONY : Date.cpp.obj
+
+Date.i: Date.cpp.i
+.PHONY : Date.i
+
+# target to preprocess a source file
+Date.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AirQualityTest.dir\build.make CMakeFiles/AirQualityTest.dir/Date.cpp.i
+.PHONY : Date.cpp.i
+
+Date.s: Date.cpp.s
+.PHONY : Date.s
+
+# target to generate assembly for a file
+Date.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AirQualityTest.dir\build.make CMakeFiles/AirQualityTest.dir/Date.cpp.s
+.PHONY : Date.cpp.s
+
+Time.obj: Time.cpp.obj
+.PHONY : Time.obj
+
+# target to build an object file
+Time.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AirQualityTest.dir\build.make CMakeFiles/AirQualityTest.dir/Time.cpp.obj
+.PHONY : Time.cpp.obj
+
+Time.i: Time.cpp.i
+.PHONY : Time.i
+
+# target to preprocess a source file
+Time.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AirQualityTest.dir\build.make CMakeFiles/AirQualityTest.dir/Time.cpp.i
+.PHONY : Time.cpp.i
+
+Time.s: Time.cpp.s
+.PHONY : Time.s
+
+# target to generate assembly for a file
+Time.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AirQualityTest.dir\build.make CMakeFiles/AirQualityTest.dir/Time.cpp.s
+.PHONY : Time.cpp.s
 
 # Help Target
 help:
@@ -160,10 +232,19 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... final_test
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... AirQualityTest
+	@echo ... AirQuality.obj
+	@echo ... AirQuality.i
+	@echo ... AirQuality.s
+	@echo ... AirQualityTest.obj
+	@echo ... AirQualityTest.i
+	@echo ... AirQualityTest.s
+	@echo ... Date.obj
+	@echo ... Date.i
+	@echo ... Date.s
+	@echo ... Time.obj
+	@echo ... Time.i
+	@echo ... Time.s
 .PHONY : help
 
 

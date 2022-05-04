@@ -53,16 +53,16 @@ RM = "C:\Program Files\JetBrains\CLion 2022.1\bin\cmake\win\bin\cmake.exe" -E rm
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\nicho\Desktop\GitHub\CS5008_Group\AirQualityProcessor\final_test
+CMAKE_SOURCE_DIR = C:\Users\nicho\Desktop\GitHub\CS5008_LastAssignment\AirQualityProcessor\final_test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\nicho\Desktop\GitHub\CS5008_Group\AirQualityProcessor\final_test\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\nicho\Desktop\GitHub\CS5008_LastAssignment\AirQualityProcessor\final_test\cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/final_test.dir/all
+all: CMakeFiles/AirQualityTest.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -70,34 +70,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/final_test.dir/clean
+clean: CMakeFiles/AirQualityTest.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/final_test.dir
+# Target rules for target CMakeFiles/AirQualityTest.dir
 
 # All Build rule for target.
-CMakeFiles/final_test.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\final_test.dir\build.make CMakeFiles/final_test.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\final_test.dir\build.make CMakeFiles/final_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\nicho\Desktop\GitHub\CS5008_Group\AirQualityProcessor\final_test\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target final_test"
-.PHONY : CMakeFiles/final_test.dir/all
+CMakeFiles/AirQualityTest.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AirQualityTest.dir\build.make CMakeFiles/AirQualityTest.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AirQualityTest.dir\build.make CMakeFiles/AirQualityTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\nicho\Desktop\GitHub\CS5008_LastAssignment\AirQualityProcessor\final_test\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5 "Built target AirQualityTest"
+.PHONY : CMakeFiles/AirQualityTest.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/final_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nicho\Desktop\GitHub\CS5008_Group\AirQualityProcessor\final_test\cmake-build-debug\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/final_test.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nicho\Desktop\GitHub\CS5008_Group\AirQualityProcessor\final_test\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/final_test.dir/rule
+CMakeFiles/AirQualityTest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nicho\Desktop\GitHub\CS5008_LastAssignment\AirQualityProcessor\final_test\cmake-build-debug\CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/AirQualityTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nicho\Desktop\GitHub\CS5008_LastAssignment\AirQualityProcessor\final_test\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/AirQualityTest.dir/rule
 
 # Convenience name for target.
-final_test: CMakeFiles/final_test.dir/rule
-.PHONY : final_test
+AirQualityTest: CMakeFiles/AirQualityTest.dir/rule
+.PHONY : AirQualityTest
 
 # clean rule for target.
-CMakeFiles/final_test.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\final_test.dir\build.make CMakeFiles/final_test.dir/clean
-.PHONY : CMakeFiles/final_test.dir/clean
+CMakeFiles/AirQualityTest.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AirQualityTest.dir\build.make CMakeFiles/AirQualityTest.dir/clean
+.PHONY : CMakeFiles/AirQualityTest.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

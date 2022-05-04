@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "final_test.exe"
+			"path" : "AirQualityTest.exe"
 		},
 		{
-			"path" : "final_test.pdb"
+			"path" : "AirQualityTest.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 6,
+				"line" : 8,
 				"parent" : 0
 			}
 		]
@@ -55,11 +55,14 @@
 			},
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1,
+				2,
+				3
 			]
 		}
 	],
-	"id" : "final_test::@6890427a1f51a3e7e1df",
+	"id" : "AirQualityTest::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -79,8 +82,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "final_test",
-	"nameOnDisk" : "final_test.exe",
+	"name" : "AirQualityTest",
+	"nameOnDisk" : "AirQualityTest.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -92,7 +95,10 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1,
+				2,
+				3
 			]
 		}
 	],
@@ -101,7 +107,25 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "main.cpp",
+			"path" : "AirQualityTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Time.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Date.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "AirQuality.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

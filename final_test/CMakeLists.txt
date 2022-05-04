@@ -3,4 +3,6 @@ project(final_test)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(final_test main.cpp)
+set(Headers AirQuality.h Date.h Time.h)
+
+add_executable(AirQualityTest AirQualityTest.cpp Time.cpp Date.cpp AirQuality.cpp)
