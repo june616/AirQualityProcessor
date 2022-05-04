@@ -16,45 +16,23 @@
   <component name="ChangeListManager">
     <list default="true" id="237ba035-5284-4d10-aa23-0bdc4b7441fc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/.cmake/api/v1/reply/cache-v2-c61f85e9378e84c5b701.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-2b3dde3a920251ab4288.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-3ef02f02a2ac8a9733db.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-f5ebdc15457944623624.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/.cmake/api/v1/reply/index-2022-05-03T20-14-28-0582.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/.cmake/api/v1/reply/target-final_project-Debug-e1fc55874abe3d2ac5f7.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-9002b9f304a9a6bc85b8.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/3.22.3/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/3.22.3/CMakeCCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/3.22.3/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/3.22.3/CMakeCXXCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/3.22.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/3.22.3/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/3.22.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/3.22.3/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/3.22.3/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/3.22.3/CMakeSystem.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdC/CMakeCCompilerId.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdCXX/CMakeCXXCompilerId.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/CMakeError.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/final_project.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/final_project.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/final_project.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/final_project.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/final_project.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/final_project.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/final_project.dir/compiler_depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/final_project.dir/compiler_depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/final_project.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/final_project.dir/compiler_depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/final_project.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/final_project.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/final_project.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/final_project.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/final_project.dir/main.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/final_project.dir/main.cpp.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/final_project.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/final_project.dir/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/final_project.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/CMakeFiles/final_project.dir/objects.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/final_project.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/final_project.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/final_project/cmake-build-debug/final_project.exe" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/cmake-build-debug/final_project.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/final_project/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/final_project/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/final_test/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/final_test/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_test/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-62a7e92ffd7f258d55be.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_test/cmake-build-debug/.cmake/api/v1/reply/index-2022-05-04T00-25-30-0896.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_test/cmake-build-debug/CMakeFiles/AirQualityTest.dir/compiler_depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_test/cmake-build-debug/CMakeFiles/AirQualityTest.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/final_test/cmake-build-debug/CMakeFiles/AirQualityTest.dir/compiler_depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_test/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/final_test/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_test/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/final_test/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_test/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/final_test/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_test/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/final_test/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_test/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/final_test/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_test/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/final_test/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_test/cmake-build-debug/final_test.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/final_test/cmake-build-debug/final_test.cbp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +43,11 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="ExportToHTMLSettings">
+    <option name="printScope" value="1" />
+    <option name="PRINT_LINE_NUMBERS" value="true" />
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/exportToHTML" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -98,11 +81,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="final_project" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="final_project" TARGET_NAME="final_project" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="final_project" RUN_TARGET_NAME="final_project">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -119,6 +97,8 @@
       <updated>1651608811593</updated>
       <workItem from="1651608813346" duration="564000" />
       <workItem from="1651623611373" duration="199000" />
+      <workItem from="1651636891782" duration="26000" />
+      <workItem from="1651637306252" duration="1046000" />
     </task>
     <servers />
   </component>
